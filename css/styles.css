@@ -266,15 +266,14 @@ ol {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
-	outline: none;
-	/* transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .mailing-input:hover {
+.mailing-input:hover {
 	border-color: var(--accent-color);
 }
 .mailing-input:focus {
 	outline: 1px solid var(--accent-color);
-} */
+}
 .button-footer {
 	display: flex;
 	justify-content: center;
@@ -572,6 +571,67 @@ ol {
 }
 .close-icon {
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form {
+	width: 448px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-title {
+	font-weight: var(--font-weight-bold);
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--second-text-color);
+	margin-bottom: 12px;
+}
+.form-field {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+.form-label {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	color: var(--text-color);
+	margin-bottom: 4px;
+	cursor: pointer;
+}
+.form-input {
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+	cursor: pointer;
+}
+textarea.form-input {
+	width: 100%;
+	height: 120px;
+	padding: 12px 16px;
+}
+textarea {
+	resize: none;
+}
+.form-button {
+	display: block;
+	margin: 30px auto 40px auto;
+	color: var(--main-color);
+	font-weight: var(--font-weight-bold);
+	font-size: var(--font-size-big);
+	line-height: 1.9;
+	width: 200px;
+	height: 50px;
+	background: var(--accent-color);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+.form-link {
+	color: var(--accent-color);
+	text-decoration: underline;
 }
 /* PORTFOLIO PAGE */
 .portfolio-nav-list {
