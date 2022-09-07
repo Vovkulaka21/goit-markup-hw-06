@@ -640,6 +640,9 @@ textarea {
   align-items: center;
   margin-bottom: 30px;
 }
+.label-privacy:focus-within {
+  outline: 1px solid var(--accent-color);
+}
 .checkbox {
   position: absolute;
   white-space: nowrap;
